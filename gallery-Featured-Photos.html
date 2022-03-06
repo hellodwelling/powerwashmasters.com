@@ -1013,26 +1013,10 @@
     };
 </script> -->
 
-<div
-    x-data="{
-        activeImage: 0,
-        amountOfImages: 0,
-        next() {
-            if (this.activeImage < this.amountOfImages - 1)
-                this.activeImage ++;
-        },
-        prev() {
-            if (this.activeImage > 0)
-                this.activeImage --;
-        },
-        loop() {
-            setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
-        },
-    }"
->
-    <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
-        
-    </ul>
+           
+
+            <div data-showcase-id="7245083d-fb12-4c02-9381-42bfc0eaf206" id="companycam-showcase-root"></div>
+
 
     <!-- Gallery Modal -->
     <template x-teleport="body">
