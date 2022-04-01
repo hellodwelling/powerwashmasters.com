@@ -2,26 +2,30 @@
 
 
 
+
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pressure Washing &amp; Soft Washing in Charlotte, NC | Power Wash Masters |  reviews</title>
-        <!-- <title>ProPhone Templates</title> -->
-        <!-- TailwindCSS  -->
-        <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
-        <!-- <link rel="stylesheet" type="stylesheet" href="/staticfiles/landing_page_gen/tailwind.css"> -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"> -->
-        <link rel="icon" href="https://landing-page-app-hero-images.s3.amazonaws.com/media/QL6M50Q7EYSIK5TV4ZHGKQA4AI2WLRLDFR6SYETY.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://prophone-templates.vercel.app/assets/output.css">
-           
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pressure Washing &amp; Soft Washing in Charlotte, NC | Power Wash Masters |  Reviews</title>
+    <meta name="description"
+          content="Gary recently cleaned my gutters and the concrete surfaces around my home. He did a spectacular job for a very reasonable price.">
+    <!-- <title>ProPhone Templates</title> -->
+    <!-- TailwindCSS  -->
+    <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
+    <!-- <link rel="stylesheet" type="stylesheet" href="/staticfiles/landing_page_gen/tailwind.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"> -->
+    <link rel="icon" href="https://landing-page-app-hero-images.s3.amazonaws.com/media/QL6M50Q7EYSIK5TV4ZHGKQA4AI2WLRLDFR6SYETY.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://prophone-templates.vercel.app/assets/output.css">
+      <script>!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error('Segment snippet included twice.');else{analytics.invoked=!0;analytics.methods=['trackSubmit','trackClick','trackLink','trackForm','pageview','identify','reset','group','track','ready','alias','debug','page','once','off','on','addSourceMiddleware','addIntegrationMiddleware','setAnonymousId','addDestinationMiddleware'];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement('script');t.type='text/javascript';t.async=!0;t.src='https://cdn.segment.com/analytics.js/v1/' + key + '/analytics.min.js';var n=document.getElementsByTagName('script')[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey='Z6dq7zq7CtZubdSRrh4EHjCsAasGDPiE';;analytics.SNIPPET_VERSION='4.15.3';analytics.load('Z6dq7zq7CtZubdSRrh4EHjCsAasGDPiE');analytics.page();}}();</script>  
 
-        
-        <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
-        <!-- Include Scripts -->
-        <!-- Header Component, only used for presentation -->
+    
+    <link defer href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
+    <!-- Include Scripts -->
+    <!-- Header Component, only used for presentation -->
 
 <!-- Carousel Plugin (can replaced if you already use one) -->
 <script defer src="https://unpkg.com/siema@1.5.1/dist/siema.min.js"></script>
@@ -35,10 +39,10 @@
 <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
 <!-- Focus Visible Polyfill -->
 <script defer src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-        <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
-        <style>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
+    <style>
             :root {
                 /* Settings */
                 --contrastThreshold: 60%;
@@ -58,79 +62,206 @@
                 --switch: calc((var(--color-primary-l) - var(--contrastThreshold)) * -100);
                 --color-primary-foreground: hsl(0, 0%, var(--switch));
             }
-        </style>
-                <script type="text/javascript">
+
+
+
+    </style>
+    <script type="text/javascript" defer>
                     function send_sms(slug){
-                        console.log('send_sms', slug)
+                        console.log('send_sms',1, slug)
+                        function uuidV4() {
+                            return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+                              (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+                            );
+                          }
+
+                        const getFileExtenstion = (dataUrl) =>{
+                            var arr = dataUrl.split(','),
+                                  mime = arr[0].match(/:(.*?);/)[1]
+                            return mime.split('/')[1]
+                        }
+  
+                          const getFileName = (dataUrl) =>{
+                              const uuid = uuidV4()
+                              const fileName = `${uuid}.${getFileExtenstion(dataUrl)}`
+                              return fileName
+                          }
+                          function dataURLtoFile(dataUrl, filename) {
+                              var arr = dataUrl.split(','),
+                                  mime = arr[0].match(/:(.*?);/)[1],
+                                  bstr = atob(arr[1]),
+                                  n = bstr.length,
+                                  u8arr = new Uint8Array(n);
+  
+                              while(n--){
+                                  u8arr[n] = bstr.charCodeAt(n);
+                              }
+  
+                              return new File([u8arr], filename, {type:mime});
+                          }
+                        function uploadFile(file, signedRequest, url) {
+                            return new Promise(function (resolve, reject) {
+                                const xhr = new XMLHttpRequest()
+                                xhr.open('PUT', signedRequest)
+                                xhr.onreadystatechange = () => {
+                                    if (xhr.readyState === 4) {
+                                        if (xhr.status === 200) {
+                                            console.log(url, 'url in uploadFile')
+                                            resolve(file.name)
+                                            //   resolve(url)
+                                        } else {
+                                            alert('Could not upload file.')
+                                        }
+                                    }
+                                }
+                                xhr.send(file)
+                            })
+                        }
+                        
+                        function getSignedRequest(file,fileName) {
+                            return new Promise(function (resolve, reject) {
+                                const xhr = new XMLHttpRequest()
+                                console.log(fileName, 'fileName')
+                                const newUrl = `https://programmable-voice-server-node.herokuapp.com/sign_s3?file_name=${fileName}&file_type=${file.type}`
+                                console.log('newurl', newUrl)
+                                xhr.open('GET', newUrl)
+                                xhr.onreadystatechange = async function () {
+                                    console.log('getSignedRequest - in onreadystatechange - xhr', xhr)
+                                    if (xhr.readyState === 4) {
+                                        if (xhr.status === 200) {
+                                            const response = JSON.parse(xhr.responseText)
+                                            const uploaded = await uploadFile(
+                                                file,
+                                                response.signedRequest,
+                                                response.url
+                                            )
+                                            resolve(fileName)
+                                        } else {
+                                            alert('Could not get signed URL.')
+                                        }
+                                    }
+                                }
+                                console.log('getSignedRequest -pre xhr.send')
+                                xhr.send()
+                            })
+                        }
+                        const get_sender_attachment = ()=>{
+                            var ImageSrc = getIdValue(`#contact-attachment`)
+                            console.log(ImageSrc,"ImageSrc")
+                            if (ImageSrc){
+                                const fileName = getFileName(ImageSrc)
+                                const fileObject = dataURLtoFile(ImageSrc,fileName)
+                                getSignedRequest(fileObject,fileName).then(res => console.log(res))
+                                return fileName
+                            }
+                            return ""
+                        }
+
                         // var sender_fname = $(`#${form_num}-first-name`).val()
                         // var sender_lname = $(`#${form_num}-last-name`).val()
                         // var sender_number = $(`#${form_num}-phone-number`).val()
                         // console.log(sender_number)
                         // var sender_message = $(`#${form_num}-message`).val()
-                        var sender_full_name = $(`#contact-full-name`).val()
-                        var full_name_split = sender_full_name.split(' ')
-                        var sender_fname = full_name_split.shift()
-                        var sender_lname = full_name_split.join(' ')
-                        var sender_number = $(`#contact-phone-number`).val()
-                        var sender_email = $(`#contact-email`).val()
-                        var sender_contact_date = $(`#contact-date`).val()
-                        var sender_promo = $(`#contact-promo-code`).val()
-                        var sender_address = $(`#contact-address`).val()
-                        
-                        // iterate over the service
-                        var sender_service = "" //$(`#contact-phone-number`).val()
-        
-                        
-                        console.log(sender_number)
-                        var sender_message = $(`#contact-concern`).val()
-                        if (!sender_fname || !sender_number || !sender_message){
-                        // if (!sender_fname || !sender_lname || !sender_number || !sender_message){
-                            alert("Please make sure to fill out all the form fields")
-                            return
+
+                        const checkIdExist = (id) =>{
+                            if ($(id).length) return true
+                            return false
                         }
-        
+
+                        const getIdValue = (id) => {
+                            if (checkIdExist(id)) return $(id).val()
+                            else return ""
+                        }
+                        const getSenderName = () =>{
+                        const sender_full_name = getIdValue(`#contact-full-name`)
+                        if (sender_full_name){
+                            const full_name_split = sender_full_name.split(' ')
+                        const sender_fname = full_name_split.shift()
+                        const sender_lname = full_name_split.join(' ')
+                        return [sender_full_name,sender_fname,sender_lname]
+                        }
+                        else{
+                            return ["","",""]
+                        }
+
+                        }
+                        const getSelectedServices = () =>{
+                            const allSelectedServiced = Array.from(document.querySelectorAll('[id^="contact-service"]'))
+
+                            if (allSelectedServiced.length){
+                                return allSelectedServiced.filter( (x)=> x.checked
+                            ).map(item => item.value).join(",");
+                            }
+                            else {return ""}
+
+                        }
+
+
+                        const [sender_full_name,sender_fname,sender_lname  ]=getSenderName()
+                        var sender_number = getIdValue(`#contact-phone-number`)
+                        var sender_email = getIdValue(`#contact-email`)
+                        var sender_contact_date = getIdValue(`#contact-date`)
+                        var sender_promo = getIdValue(`#contact-promo-code`)
+                        var sender_address = getIdValue(`#contact-address`)
+                        const photo = get_sender_attachment()
+                        console.log(photo,"sender_attachment")
+                        // TODO As services are multiple choice option do user can select only one or user can select multiple option
+                            // discuss about how this should happen
+                        // iterate over the service
+                        const services = getSelectedServices()
+                        // var sender_service = "" //$(`#contact-phone-number`).val()
+
+                        var sender_message = getIdValue(`#contact-concern`)
+                        // TODO add a better validator for each field
+                            // Perform validation before any computation
+
+                        // if (!sender_fname || !sender_number || !sender_message){
+                        // // if (!sender_fname || !sender_lname || !sender_number || !sender_message){
+                        //     alert("Please make sure to fill out all the form fields")
+                        //     return
+                        // }
+
                         var cleaned_sender_number = sender_number.replace("(", "").replace(")", "").replace("-", "").replace(" ", "")
-                        var sender_services = ""
-        
+
+
                         console.log("text", slug, sender_fname, sender_lname, sender_number, sender_message)
-                        // return ' bucks'
-                        // fetch('http://127.0.0.1:8000/sms/' + slug , {
-                        fetch('https://prophone.herokuapp.com/sms/' + slug , {
+                        fetch("https://prosite.prophone.com/sms/" + slug , {
                             method: 'POST',
                             body: JSON.stringify({
                                 sender_full_name : sender_full_name,
                                 sender_email : sender_email,
                                 sender_promo : sender_promo,
-                                sender_services : sender_services,
                                 sender_fname : sender_fname,
                                 sender_lname: sender_lname,
                                 sender_number: cleaned_sender_number,
                                 sender_message: sender_message,
                                 sender_address: sender_address,
-                                sender_contact_date: sender_contact_date
+                                sender_contact_date: sender_contact_date,
+                                photo,
+                                services
                             })
-                            
+
                         })
                         .then(result => {
                             //Here body is not ready yet, throw promise
                             if (!result.ok) throw result;
                             return result.json();
-                        })      
+                        })
                         .then(result => {
                             console.log(result)
                             alert("Your message has been sent!")
                             location.reload()
                         })
-        
-        
-                        
+
+
                     }
+                
                     console.log('go bucks')
                     $('document').ready(function(){
                         console.log('doc ready')
                         let cover = $("#cover-button")
-                        console.log("cover", cover)  
-        
+                        console.log("cover", cover)
+
                         if (cover.position() !== undefined){
                             let cover_bottom = cover.position().top - 40
                             $(window).scroll(function(){
@@ -140,7 +271,7 @@
                                 if ( $("#side-button").hasClass('-translate-x-80')){
                                 $("#side-button").removeClass("-translate-x-80").addClass("translate-x-64")
                                 }
-                                
+
                             }
                             else{
                                 $("#side-button").addClass("transform -translate-x-80 ease-in duration-700");
@@ -149,58 +280,61 @@
                         } else {
                             $("#side-button").addClass("transform -translate-x-80 ease-in duration-700");
                         }
-        
-                        
-                        
+
+
+
                         });
-        
-                </script>
-    </head>
-    <body x-data="{ contactModalOpen: false, applyModalOpen: false, reviewModalOpen: false, textModalOpen: false, galleryModalOpen:false, active: 0 }" class="pt-24 md:pt-44">
-            <!-- <div class="sticky top-0 z-50 pt-8 pb-4 bg-white">
-                <div class="flex items-center justify-between">
-                    <h1 class="text-2xl font-medium tracking-tight">ProPhone Templates</h1>
-                    <div class="flex items-center mt-2 space-x-4 bg-white">
-                        <span class="sr-only">Select Theme</span>
-                        <div class="flex space-x-2">
-                            <button
-                                :class="active === 0 ? 'ring ring-offset-1 ring-[#1e3a8a]' : ''"
-                                x-on:click="active = 0; setPrimary('224', '78%', '33%'); setSecondary('21', '95%', '48%');"
-                                class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
-                            >
-                                <div class="h-3 w-6 bg-[#1e3a8a]"></div>
-                                <div class="h-3 w-6 bg-[#ea580c]"></div>
-                            </button>
-                            <button
-                                :class="active === 1 ? 'ring ring-offset-1 ring-[#1E293B]' : ''"
-                                x-on:click="active = 1; setPrimary('217', '33%', '17%'); setSecondary('142', '83%', '45%');"
-                                class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
-                            >
-                                <div class="h-3 w-6 bg-[#1E293B]"></div>
-                                <div class="h-3 w-6 bg-[#22C55E]"></div>
-                            </button>
-                            <button
-                                :class="active === 2 ? 'ring ring-offset-1 ring-[#4F46E5]' : ''"
-                                x-on:click="active = 2; setPrimary('243', '69%', '59%'); setSecondary('189', '97%', '43%');"
-                                class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
-                            >
-                                <div class="h-3 w-6 bg-[#4F46E5]"></div>
-                                <div class="h-3 w-6 bg-[#06B6D4]"></div>
-                            </button>
-                            <button
-                                :class="active === 3 ? 'ring ring-offset-1 ring-[#f72585]' : ''"
-                                x-on:click="active = 3; setPrimary('333', '85%', '56%'); setSecondary('263', '93%', '35%');"
-                                class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
-                            >
-                                <div class="h-3 w-6 bg-[#f72585]"></div>
-                                <div class="h-3 w-6 bg-[#480ca8]"></div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-    
-            <nav class="fixed inset-x-0 top-0 z-20">
+
+
+
+
+    </script>
+</head>
+<body x-data="{ contactModalOpen: false, applyModalOpen: false, reviewModalOpen: false, textModalOpen: false, galleryModalOpen:false, active: 0 }" class="pt-24 md:pt-44">
+<!-- <div class="sticky top-0 z-50 pt-8 pb-4 bg-white">
+    <div class="flex items-center justify-between">
+        <h1 class="text-2xl font-medium tracking-tight">ProPhone Templates</h1>
+        <div class="flex items-center mt-2 space-x-4 bg-white">
+            <span class="sr-only">Select Theme</span>
+            <div class="flex space-x-2">
+                <button
+                    :class="active === 0 ? 'ring ring-offset-1 ring-[#1e3a8a]' : ''"
+                    x-on:click="active = 0; setPrimary('224', '78%', '33%'); setSecondary('21', '95%', '48%');"
+                    class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
+                >
+                    <div class="h-3 w-6 bg-[#1e3a8a]"></div>
+                    <div class="h-3 w-6 bg-[#ea580c]"></div>
+                </button>
+                <button
+                    :class="active === 1 ? 'ring ring-offset-1 ring-[#1E293B]' : ''"
+                    x-on:click="active = 1; setPrimary('217', '33%', '17%'); setSecondary('142', '83%', '45%');"
+                    class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
+                >
+                    <div class="h-3 w-6 bg-[#1E293B]"></div>
+                    <div class="h-3 w-6 bg-[#22C55E]"></div>
+                </button>
+                <button
+                    :class="active === 2 ? 'ring ring-offset-1 ring-[#4F46E5]' : ''"
+                    x-on:click="active = 2; setPrimary('243', '69%', '59%'); setSecondary('189', '97%', '43%');"
+                    class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
+                >
+                    <div class="h-3 w-6 bg-[#4F46E5]"></div>
+                    <div class="h-3 w-6 bg-[#06B6D4]"></div>
+                </button>
+                <button
+                    :class="active === 3 ? 'ring ring-offset-1 ring-[#f72585]' : ''"
+                    x-on:click="active = 3; setPrimary('333', '85%', '56%'); setSecondary('263', '93%', '35%');"
+                    class="relative w-6 h-6 overflow-hidden transition-all -rotate-45 rounded-full hover:scale-110"
+                >
+                    <div class="h-3 w-6 bg-[#f72585]"></div>
+                    <div class="h-3 w-6 bg-[#480ca8]"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<nav class="fixed inset-x-0 top-0 z-20">
     <div
         x-data="{ navOpen: false, scrolledFromTop: false, mobileOpen: false }"
         x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
@@ -248,9 +382,9 @@
                                 
                                     <a
                                         href=" index "
-                                        class=" 'border-secondary'  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium border-b-2 focus:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
+                                        class=" border-transparent hover:border-gray-300 hover:text-gray-700 text-gray-500  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  text-gray-500  focus:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
                                     >
-                                        Home
+                                        Home 
                                     </a>
                                 <!-- </else> -->
                                 
@@ -448,7 +582,7 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Featured Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-Featured-Photos&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Guard Installation&#x27;, &#x27;href&#x27;: &#x27;gallery-Guard-Installation&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;House Wash&#x27;, &#x27;href&#x27;: &#x27;gallery-House-Wash&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Deck and Fence Cleaning&#x27;, &#x27;href&#x27;: &#x27;gallery-Deck-and-Fence-Cleaning&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Concrete Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Concrete-Washing&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Commercial&#x27;, &#x27;href&#x27;: &#x27;gallery-Commercial&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Gutter Cleaning&#x27;, &#x27;href&#x27;: &#x27;gallery-Gutter-Cleaning&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Featured Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-Featured-Photos&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Guard Installation&#x27;, &#x27;href&#x27;: &#x27;gallery-Guard-Installation&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;House Wash&#x27;, &#x27;href&#x27;: &#x27;gallery-House-Wash&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Deck and Fence Cleaning&#x27;, &#x27;href&#x27;: &#x27;gallery-Deck-and-Fence-Cleaning&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Concrete Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Concrete-Washing&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Gutter Cleaning&#x27;, &#x27;href&#x27;: &#x27;gallery-Gutter-Cleaning&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Commercial&#x27;, &#x27;href&#x27;: &#x27;gallery-Commercial&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
                                                     <a
                                                         href=" gallery-Featured-Photos "
@@ -506,23 +640,23 @@
                                                <!--  -->
                                                  
                                                     <a
-                                                        href=" gallery-Commercial "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Commercial</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
-                                                    <a
                                                         href=" gallery-Gutter-Cleaning "
                                                         role="menuitem"
                                                         class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Gutter Cleaning</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" gallery-Commercial "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Commercial</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -560,33 +694,9 @@
                                 
                                     <a
                                         href=" reviews "
-                                        class=" 'border-transparent hover:border-gray-300 hover:text-gray-700 text-gray-500'  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium border-b-2 focus:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
+                                        class=" border-secondary hover:border-gray-300   group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  border-b-2 text-gray-900  focus:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
                                     >
-                                        Reviews
-                                    </a>
-                                <!-- </else> -->
-                                
-                                
-                                
-                            </div>
-                        <!-- </each> -->
-                        
-                            <div
-                                class="relative flex items-center"
-                                x-trap.inert="desktopOpen"
-                                x-data="{ desktopOpen: false }"
-                                @keydown.escape.stop="desktopOpen = false"
-                                @click.away="desktopOpen = false"
-                            >
-                            <!-- <div>navitem_5</div>  -->
-                                <!-- We decide between direct link and dropdown here -->
-                                <!-- <if condition="item.links"> -->
-                                
-                                    <a
-                                        href=" team "
-                                        class=" 'border-transparent hover:border-gray-300 hover:text-gray-700 text-gray-500'  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium border-b-2 focus:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
-                                    >
-                                        Team
+                                        Reviews 
                                     </a>
                                 <!-- </else> -->
                                 
@@ -640,7 +750,7 @@
                         
                         <div class="inline-flex w-full ml-3 sm:w-auto">
                             <a
-                                href="bids.responsibid.com/Form/iframeForm/539c7f8ced67c76a33a1bccedb819bb64a830e1a2b7d56496011410985957142"
+                                href="https://bids.responsibid.com/Form/iframeForm/539c7f8ced67c76a33a1bccedb819bb64a830e1a2b7d56496011410985957142"
                             :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
                             class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
                                 >
@@ -700,7 +810,7 @@
                                 
                                     <a
                                         href=" index "
-                                        class=" 'text-secondary'  block px-3 py-2 text-base font-medium rounded-md border-secondary transition"
+                                        class=" 'text-gray-700'  block px-3 py-2 text-base font-medium rounded-md border-secondary transition"
                                         >Home</a
                                     >
                                 
@@ -868,15 +978,15 @@
                                                 </a>
                                             <!-- </each> -->
                                             
-                                                <a href="gallery-Commercial" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Commercial</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
                                                 <a href="gallery-Gutter-Cleaning" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Gutter Cleaning</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
+                                                <a href="gallery-Commercial" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Commercial</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -897,21 +1007,8 @@
                                 
                                     <a
                                         href=" reviews "
-                                        class=" 'text-gray-700'  block px-3 py-2 text-base font-medium rounded-md border-secondary transition"
+                                        class=" 'text-secondary'  block px-3 py-2 text-base font-medium rounded-md border-secondary transition"
                                         >Reviews</a
-                                    >
-                                
-                                
-                            </div>
-                        <!-- </each> -->
-                      
-                            <div x-trap.inert="openMenu == 'navitem_5'">
-                                <!-- We decide between direct link and dropdown here -->
-                                
-                                    <a
-                                        href=" team "
-                                        class=" 'text-gray-700'  block px-3 py-2 text-base font-medium rounded-md border-secondary transition"
-                                        >Team</a
                                     >
                                 
                                 
@@ -933,7 +1030,7 @@
                         
                             <a
                                 target="_blank" rel="noopener noreferrer" 
-                                href="//bids.responsibid.com/Form/iframeForm/539c7f8ced67c76a33a1bccedb819bb64a830e1a2b7d56496011410985957142"
+                                href="https://bids.responsibid.com/Form/iframeForm/539c7f8ced67c76a33a1bccedb819bb64a830e1a2b7d56496011410985957142"
                             :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
                             class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
                                 >
@@ -951,7 +1048,7 @@
     </div>
 </nav>
 
-            <div
+<div
     x-data="{ buttonVisible: false }"
     x-init="buttonVisible = window.pageYOffset >= 400 && (window.innerHeight + window.pageYOffset) <= document.body.scrollHeight - 500"
     @scroll.window="window.pageYOffset >= 400 && (window.innerHeight + window.scrollY) <= document.body.scrollHeight - 500 ? buttonVisible = true : buttonVisible = false"
@@ -979,9 +1076,9 @@
 </div>
 
 
-            
-                
-                    <section class="bg-white">
+
+
+<section class="bg-white">
     <div class="flex flex-col items-center px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-24 lg:px-8">
         <!-- Heading -->
         <h1 class="text-3xl font-extrabold sm:text-4xl text-primary">Testimonials &amp; Reviews</h1>
@@ -991,11 +1088,747 @@
         <button @click="reviewModalOpen = true;" class="inline-flex items-center justify-center px-5 py-3 mt-8 text-base font-medium text-white transition border-2 border-transparent rounded-md sm:py-4 sm:px-10 hover:bg-primary-darker focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 ring-opacity-75 bg-primary">Leave a Review</button>
     </div>
 </section>
+<section class="bg-white">
+    <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <!-- Testimonial Masonry -->
+        <div class="grid grid-cols-1 gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- TODO: This is a bit tricky here: We want to have 3 columns, so we can't simply loop over all testimonials.
+            Instead, we have to do it like this (python example):
+            import numpy as np
 
-<script src="https://sotellus.com/js/sotellus_widget.js?client=powerwash-masters&amp;width=100%25&amp;height=500" async></script>
-                
+            items = ["item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10"]
+            columns = np.array_split(items, 3)
+
+            for column in columns:
+                print('<ul class="space-y-8">')
+                for row in column:
+                    print('<li class="...">%s</li>' % row)
+                print('</ul>')
+
+            For this template I simply used three hard coded columns
+            -->
+
+            <!-- Loop each of the three chunks (columns) here -->
+            <!-- <each loop="column, index in [0, 1, 2]"> -->
             
-                <!-- CTA Component -->
+                <!-- <each loop="column, index in [0, 1, 2]"> -->
+                <!-- Single Testimonial Column -->
+                <ul class="space-y-8">
+                    <!-- Loop each of the items (rows) here -->
+                    
+                    
+                        <!-- <each loop="item, index in ['', '', '']"> -->
+                        <!-- Review Item -->
+                        <li class="px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <div aria-hidden="true" class="space-x-1.5 flex">
+                                    <!-- TODO: Simply use a for loop here `for i = 1; i < amountOfStars; i++` -->
+                                    
+                                        <!-- 0 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 1 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 2 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 3 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 4 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                    <!-- <each loop="item in [1,2,3,4,5]">
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    </each> -->
+                                </div>
+                                <!-- TODO: Add the current amount of stars here -->
+                                <span class="sr-only">5 out of 5 stars</span>
+                            </div>
+
+                            <blockquote class="mt-6">
+                                <div class="relative">
+                                    <svg
+                                        aria-hidden="true"
+                                        class="absolute top-0 left-0 w-8 h-8 text-gray-200 -translate-x-3 -translate-y-2"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4Zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                    <p lorem="2" class="relative text-lg font-medium">
+                                        Gary recently cleaned my gutters and the concrete surfaces around my home. He did a spectacular job for a very reasonable price. Our patio looks new, except for the cracks that show it’s true age. I would recommend Gary to anyone who wants an excellent power wash service without paying a fortune.
+                                    </p>
+                                </div>
+                                <footer class="flex items-center justify-between mt-8 space-x-4">
+                                    <div>
+                                        <span class="block font-medium text-primary">Theodore D&#x27;alessio</span>
+                                        <span class="block font-medium">Charlotte, NC</span>
+                                    </div>
+                                    <!-- Social Icon -->
+                                    <div class="flex-shrink-0">
+                                        <span class="sr-only">None</span>
+                                        
+
+                                       <!--  <svg
+                                            aria-hidden="true"
+                                            class="text-blue-900 transition-transform w-7 h-7"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg> -->
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </li>
+                    
+                    
+                    
+                        <!-- <each loop="item, index in ['', '', '']"> -->
+                        <!-- Review Item -->
+                        <li class="px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <div aria-hidden="true" class="space-x-1.5 flex">
+                                    <!-- TODO: Simply use a for loop here `for i = 1; i < amountOfStars; i++` -->
+                                    
+                                        <!-- 0 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 1 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 2 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 3 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 4 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                    <!-- <each loop="item in [1,2,3,4,5]">
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    </each> -->
+                                </div>
+                                <!-- TODO: Add the current amount of stars here -->
+                                <span class="sr-only">5 out of 5 stars</span>
+                            </div>
+
+                            <blockquote class="mt-6">
+                                <div class="relative">
+                                    <svg
+                                        aria-hidden="true"
+                                        class="absolute top-0 left-0 w-8 h-8 text-gray-200 -translate-x-3 -translate-y-2"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4Zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                    <p lorem="2" class="relative text-lg font-medium">
+                                        The process of getting a quote, to scheduling an appointment, and the completion of the job was hassle and stress free. Gary answered all of my questions regarding the service and did an excellent job with pressure washing my home.
+                                    </p>
+                                </div>
+                                <footer class="flex items-center justify-between mt-8 space-x-4">
+                                    <div>
+                                        <span class="block font-medium text-primary">Patricia Wilson</span>
+                                        <span class="block font-medium">Charlotte, NC</span>
+                                    </div>
+                                    <!-- Social Icon -->
+                                    <div class="flex-shrink-0">
+                                        <span class="sr-only">None</span>
+                                        
+
+                                       <!--  <svg
+                                            aria-hidden="true"
+                                            class="text-blue-900 transition-transform w-7 h-7"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg> -->
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </li>
+                    
+                    
+                    <!-- </each> -->
+                </ul>
+                
+                <!-- <each loop="column, index in [0, 1, 2]"> -->
+                <!-- Single Testimonial Column -->
+                <ul class="space-y-8">
+                    <!-- Loop each of the items (rows) here -->
+                    
+                    
+                        <!-- <each loop="item, index in ['', '', '']"> -->
+                        <!-- Review Item -->
+                        <li class="px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <div aria-hidden="true" class="space-x-1.5 flex">
+                                    <!-- TODO: Simply use a for loop here `for i = 1; i < amountOfStars; i++` -->
+                                    
+                                        <!-- 0 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 1 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 2 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 3 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 4 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                    <!-- <each loop="item in [1,2,3,4,5]">
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    </each> -->
+                                </div>
+                                <!-- TODO: Add the current amount of stars here -->
+                                <span class="sr-only">5 out of 5 stars</span>
+                            </div>
+
+                            <blockquote class="mt-6">
+                                <div class="relative">
+                                    <svg
+                                        aria-hidden="true"
+                                        class="absolute top-0 left-0 w-8 h-8 text-gray-200 -translate-x-3 -translate-y-2"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4Zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                    <p lorem="2" class="relative text-lg font-medium">
+                                        Gary came out and was here for over three hours. To say he did a thorough job is an understatement. He took great pride in the job, was friendly, professional and we will recommend this company to everyone. We feel like we have a new house!! Thank you so much for your hard work!!
+                                    </p>
+                                </div>
+                                <footer class="flex items-center justify-between mt-8 space-x-4">
+                                    <div>
+                                        <span class="block font-medium text-primary">Kimmie McHugh</span>
+                                        <span class="block font-medium">Charlotte, NC</span>
+                                    </div>
+                                    <!-- Social Icon -->
+                                    <div class="flex-shrink-0">
+                                        <span class="sr-only">None</span>
+                                        
+
+                                       <!--  <svg
+                                            aria-hidden="true"
+                                            class="text-blue-900 transition-transform w-7 h-7"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg> -->
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </li>
+                    
+                    
+                    
+                        <!-- <each loop="item, index in ['', '', '']"> -->
+                        <!-- Review Item -->
+                        <li class="px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <div aria-hidden="true" class="space-x-1.5 flex">
+                                    <!-- TODO: Simply use a for loop here `for i = 1; i < amountOfStars; i++` -->
+                                    
+                                        <!-- 0 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 1 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 2 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 3 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 4 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                    <!-- <each loop="item in [1,2,3,4,5]">
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    </each> -->
+                                </div>
+                                <!-- TODO: Add the current amount of stars here -->
+                                <span class="sr-only">5 out of 5 stars</span>
+                            </div>
+
+                            <blockquote class="mt-6">
+                                <div class="relative">
+                                    <svg
+                                        aria-hidden="true"
+                                        class="absolute top-0 left-0 w-8 h-8 text-gray-200 -translate-x-3 -translate-y-2"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4Zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                    <p lorem="2" class="relative text-lg font-medium">
+                                        Gary just came out &amp; pressure washed my house &amp; garage. I am so happy with the amazing job he did. Everything looks brand new. If anyone is in need of pressure washing please call Gary Simpson at Power Wash Masters. He is the Man &amp; does it for a very reasonable price. Thank you Gary for a very very excellent job.
+                                    </p>
+                                </div>
+                                <footer class="flex items-center justify-between mt-8 space-x-4">
+                                    <div>
+                                        <span class="block font-medium text-primary">Vickie Hinson</span>
+                                        <span class="block font-medium">Charlotte, NC</span>
+                                    </div>
+                                    <!-- Social Icon -->
+                                    <div class="flex-shrink-0">
+                                        <span class="sr-only">None</span>
+                                        
+
+                                       <!--  <svg
+                                            aria-hidden="true"
+                                            class="text-blue-900 transition-transform w-7 h-7"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg> -->
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </li>
+                    
+                    
+                    <!-- </each> -->
+                </ul>
+                
+                <!-- <each loop="column, index in [0, 1, 2]"> -->
+                <!-- Single Testimonial Column -->
+                <ul class="space-y-8">
+                    <!-- Loop each of the items (rows) here -->
+                    
+                    
+                        <!-- <each loop="item, index in ['', '', '']"> -->
+                        <!-- Review Item -->
+                        <li class="px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <div aria-hidden="true" class="space-x-1.5 flex">
+                                    <!-- TODO: Simply use a for loop here `for i = 1; i < amountOfStars; i++` -->
+                                    
+                                        <!-- 0 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 1 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 2 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 3 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 4 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                    <!-- <each loop="item in [1,2,3,4,5]">
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    </each> -->
+                                </div>
+                                <!-- TODO: Add the current amount of stars here -->
+                                <span class="sr-only">5 out of 5 stars</span>
+                            </div>
+
+                            <blockquote class="mt-6">
+                                <div class="relative">
+                                    <svg
+                                        aria-hidden="true"
+                                        class="absolute top-0 left-0 w-8 h-8 text-gray-200 -translate-x-3 -translate-y-2"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4Zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                    <p lorem="2" class="relative text-lg font-medium">
+                                        Power Wash Masters did an AMAZING JOB with power washing my home on Dec 23, 2017!  I had to go out of town to visit my family, but I trusted Gary and left him unsupervised to do the job.  When I returned to my neighborhood, I didn&#x27;t recognize my home!  Power Wash Masters has definitely gained a loyal client!!!
+                                    </p>
+                                </div>
+                                <footer class="flex items-center justify-between mt-8 space-x-4">
+                                    <div>
+                                        <span class="block font-medium text-primary">James Adams</span>
+                                        <span class="block font-medium">Charlotte, NC</span>
+                                    </div>
+                                    <!-- Social Icon -->
+                                    <div class="flex-shrink-0">
+                                        <span class="sr-only">None</span>
+                                        
+
+                                       <!--  <svg
+                                            aria-hidden="true"
+                                            class="text-blue-900 transition-transform w-7 h-7"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg> -->
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </li>
+                    
+                    
+                    
+                        <!-- <each loop="item, index in ['', '', '']"> -->
+                        <!-- Review Item -->
+                        <li class="px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <div aria-hidden="true" class="space-x-1.5 flex">
+                                    <!-- TODO: Simply use a for loop here `for i = 1; i < amountOfStars; i++` -->
+                                    
+                                        <!-- 0 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 1 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 2 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 3 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <!-- 4 -->
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                    <!-- <each loop="item in [1,2,3,4,5]">
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    </each> -->
+                                </div>
+                                <!-- TODO: Add the current amount of stars here -->
+                                <span class="sr-only">5 out of 5 stars</span>
+                            </div>
+
+                            <blockquote class="mt-6">
+                                <div class="relative">
+                                    <svg
+                                        aria-hidden="true"
+                                        class="absolute top-0 left-0 w-8 h-8 text-gray-200 -translate-x-3 -translate-y-2"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4Zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                    <p lorem="2" class="relative text-lg font-medium">
+                                        Gary came out and power washed our house, driveway, and front porch and it came out great!  He was punctual on a Saturday morning, and extremely thorough.  The green gunk on the north side of the house is GONE! Thanks so much!
+                                    </p>
+                                </div>
+                                <footer class="flex items-center justify-between mt-8 space-x-4">
+                                    <div>
+                                        <span class="block font-medium text-primary">Nicole Barbier Miner</span>
+                                        <span class="block font-medium">Charlotte, NC</span>
+                                    </div>
+                                    <!-- Social Icon -->
+                                    <div class="flex-shrink-0">
+                                        <span class="sr-only">None</span>
+                                        
+
+                                       <!--  <svg
+                                            aria-hidden="true"
+                                            class="text-blue-900 transition-transform w-7 h-7"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg> -->
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </li>
+                    
+                    
+                    <!-- </each> -->
+                </ul>
+                
+            <!-- </each> -->
+        </div>
+
+        <div class="flex justify-center mt-6">
+            <p class="inline-flex items-center text-base text-gray-400 xl:text-center">
+                Powered by
+                <a href="https://www.prophone.com" class="inline-block p-1 -m-1 ml-0.5 rounded focus:outline-none focus:ring-2 ring-primary ring-opacity-75">
+                    <span class="sr-only">ProPhone</span>
+                    <svg aria-hidden="true" width="95" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#a)">
+                            <path
+                                d="M.167 4.115c0-.23.183-.417.409-.417h7.842c.287 0 .485.294.381.567L2.927 19.734a.41.41 0 0 1-.381.266H.576a.413.413 0 0 1-.41-.416V4.114Z"
+                                fill="#E64D3D"
+                            />
+                            <path
+                                d="M15.56 15.885c0 .23-.182.417-.408.417H7.31a.416.416 0 0 1-.382-.567L12.8.266A.41.41 0 0 1 13.182 0h1.97c.226 0 .409.187.409.417v15.468Z"
+                                fill="#0D276A"
+                            />
+                            <path
+                                d="M23.284 15.573h1.963v-3.86h1.765c2.148 0 3.682-1.405 3.682-3.437 0-2.03-1.534-3.453-3.682-3.453h-3.729v10.75Zm1.963-9.125h1.489c1.135 0 1.933.735 1.933 1.828 0 1.078-.798 1.813-1.933 1.813h-1.489v-3.64Zm7.386 9.125h1.964v-5.219c.506-.656 1.197-1.015 1.841-1.015.23 0 .476.031.69.094V7.65a2.275 2.275 0 0 0-.644-.078c-.66 0-1.335.344-1.887.969v-.781h-1.964v7.812Zm5.509-3.906c0 2.39 1.642 4.094 3.959 4.094 2.316 0 3.943-1.703 3.943-4.094 0-2.406-1.627-4.094-3.943-4.094-2.317 0-3.959 1.688-3.959 4.094Zm2.01 0c0-1.438.798-2.422 1.949-2.422 1.135 0 1.933.985 1.933 2.422 0 1.438-.798 2.422-1.933 2.422-1.151 0-1.949-.985-1.949-2.422Z"
+                                fill="#E64D3D"
+                            />
+                            <path
+                                d="M48.283 15.573h1.963v-3.86h1.765c2.148 0 3.682-1.405 3.682-3.437 0-2.03-1.534-3.453-3.682-3.453h-3.728v10.75Zm1.963-9.125h1.489c1.135 0 1.933.735 1.933 1.828 0 1.079-.798 1.813-1.933 1.813h-1.489v-3.64Zm7.386 9.125h1.964v-5.422c.506-.546 1.074-.828 1.642-.828.797 0 1.35.594 1.35 1.422v4.828h1.98v-5.187c0-1.656-1.136-2.813-2.732-2.813-.782 0-1.55.297-2.24.86V4.339h-1.964v11.234Zm8.79-3.906c0 2.39 1.642 4.094 3.96 4.094 2.316 0 3.942-1.703 3.942-4.094 0-2.406-1.626-4.094-3.943-4.094s-3.958 1.688-3.958 4.094Zm2.01 0c0-1.438.798-2.422 1.95-2.422 1.134 0 1.932.985 1.932 2.422 0 1.438-.797 2.422-1.933 2.422-1.15 0-1.948-.985-1.948-2.422Zm7.824 3.906h1.964v-5.422c.506-.546 1.074-.828 1.642-.828.797 0 1.35.594 1.35 1.422v4.828h1.979v-5.187c0-1.656-1.135-2.813-2.731-2.813-.782 0-1.55.297-2.24.86V7.76h-1.964v7.812Zm8.79-3.969c0 2.438 1.627 4.157 3.944 4.157.859 0 1.733-.203 2.608-.61V13.48c-.798.468-1.58.734-2.286.734-1.289 0-2.21-.813-2.332-2h5.201c.03-.266.03-.516.03-.735 0-2.296-1.365-3.906-3.375-3.906-2.194 0-3.79 1.672-3.79 4.031Zm1.934-.687c.092-1.078.828-1.797 1.78-1.797.874 0 1.503.735 1.564 1.797H86.98Z"
+                                fill="#0D276A"
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id="a"><path fill="#fff" transform="translate(.167)" d="M0 0h94.667v20H0z" /></clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- CTA Component -->
 <section class="bg-white">
     <div class="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <!-- Heading -->
@@ -1022,7 +1855,7 @@
             
             <div class="inline-flex w-full ml-3 sm:w-auto">
                 <a
-                    href="bids.responsibid.com/form/iframeform/539c7f8ced67c76a33a1bccedb819bb64a830e1a2b7d56496011410985957142"
+                    href="https://bids.responsibid.com/Form/iframeForm/539c7f8ced67c76a33a1bccedb819bb64a830e1a2b7d56496011410985957142"
                     class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  sm:py-4 sm:px-10 hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-offset-2 ring-opacity-75 sm:w-auto text-primary border-primary"
                 >
                     Online Quote
@@ -1050,7 +1883,7 @@
     </div>
 </section>
 
-                <!-- Footer Component -->
+<!-- Footer Component -->
 <footer class="bg-primary" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:pt-16 lg:pb-10 lg:px-8">
@@ -1069,10 +1902,10 @@
                   <!-- Is this supposed to be here and correct?  -->
                   <!-- The finest landscaping in Austin & surrounding areas. Exceptional, professional service. You are our priority! -->
               </p>
-              <div class="flex space-x-6">
+              <div class="flex flex-wrap justify-between align-middle ">
                   <!-- are these conditional? and linked to corret links? -->
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//www.facebook.com/powerwash4u/?ref=page_internal" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/powerwash4u/?ref=page_internal" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Facebook</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path
@@ -1098,7 +1931,7 @@
                   
                   
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//g.page/powerwash4u?share" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href=" https://goo.gl/maps/L1mMsVqqzPXD8H5H8" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Google</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path d="M20 10.2222C20 9.40001 19.9319 8.80001 19.7846 8.1778H10.2041V11.8889H15.8276C15.7143 12.8111 15.1021 14.2 13.7415 15.1333L13.7224 15.2575L16.7516 17.5573L16.9615 17.5778C18.8889 15.8333 20 13.2667 20 10.2222Z" fill="#9CA3AF"/>
@@ -1154,15 +1987,14 @@
                           </li>
                           
                           
+                          
                           <li>
                               <a
-                                  href="team"
+                                  href='sitemap.xml'
                                   class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                                  >Team</a
+                                  >Sitemap</a
                               >
                           </li>
-                          
-                          
                       </ul>
                   </div>
                   <!-- Services Links -->
@@ -1329,45 +2161,45 @@
   </div>
 </footer>
 
-                <!-- Modal -->
+<!-- Modal -->
 <template x-teleport="body">
     <div
-        x-show="contactModalOpen"
-        @keydown.escape.prevent.stop="contactModalOpen = false"
-        role="dialog"
-        aria-modal="true"
-        x-id="['modal-title']"
-        :aria-labelledby="$id('modal-title')"
-        class="fixed inset-0 z-40 pt-8 pb-20"
-        x-trap.noscroll.inert="contactModalOpen"
+            x-show="contactModalOpen"
+            @keydown.escape.prevent.stop="contactModalOpen = false"
+            role="dialog"
+            aria-modal="true"
+            x-id="['modal-title']"
+            :aria-labelledby="$id('modal-title')"
+            class="fixed inset-0 z-40 md:pt-8 md:pb-20"
+            x-trap.noscroll.inert="contactModalOpen"
     >
         <!-- Overlay -->
         <div
-            x-show="contactModalOpen"
-            x-transition:enter="ease-out duration-300"
-            x-transition:enter-start="opacity-0"
-            x-transition:enter-end="opacity-100"
-            x-transition:leave="ease-in duration-200"
-            x-transition:leave-start="opacity-100"
-            x-transition:leave-end="opacity-0"
-            aria-hidden="true"
-            class="fixed inset-0 bg-black bg-opacity-50"
+                x-show="contactModalOpen"
+                x-transition:enter="ease-out duration-300"
+                x-transition:enter-start="opacity-0"
+                x-transition:enter-end="opacity-100"
+                x-transition:leave="ease-in duration-200"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                aria-hidden="true"
+                class="fixed inset-0 bg-black bg-opacity-50"
         ></div>
         <!-- Panel -->
         <div
-            x-show="contactModalOpen"
-            x-transition:enter="ease-out duration-300"
-            x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-            x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
-            x-transition:leave="ease-in duration-200"
-            x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
-            x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-            @click="contactModalOpen = false"
-            class="relative flex items-center justify-center w-full h-full"
+                x-show="contactModalOpen"
+                x-transition:enter="ease-out duration-300"
+                x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+                x-transition:leave="ease-in duration-200"
+                x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+                x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                @click="contactModalOpen = false"
+                class="relative flex items-center justify-center w-full h-full sm:h-max"
         >
             <div
-                @click.stop
-                class="flex flex-col w-full max-h-full pb-3 mx-6 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl  sm:px-0 sm:my-8 sm:align-middle sm:max-w-sm"
+                    @click.stop
+                    class="flex flex-col w-full h-full overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:px-0 sm:my-0 sm:align-middle sm:max-w-3xl"
             >
                 <!-- Header -->
                 <div class="relative px-6 bg-white">
@@ -1376,259 +2208,279 @@
                     <!-- Small overlay for scrolling area  -->
                     <div aria-hidden="true" class="absolute inset-x-0 h-8 -bottom-8 bg-gradient-to-b from-white"></div>
                     <button
-                        @click="contactModalOpen = false;"
-                        class="absolute p-1 transition rounded  top-5 right-5 hover:bg-gray-100 focus-visible:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
+                            @click="contactModalOpen = false;"
+                            class="absolute p-1 transition rounded  top-5 right-5 hover:bg-gray-100 focus-visible:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
                     >
                         <span class="sr-only">Close modal</span>
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                         </svg>
                     </button>
                 </div>
 
                 <!-- Form -->
-                <form class="flex-grow overflow-x-hidden overflow-y-auto">
-                    <div class="h-full px-6 pb-1 mt-6 space-y-6">
-                        <!-- Full Name -->
-                        <div>
-                            <label for="contact-full-name" class="sr-only">Full Name</label>
-                            <input
-                                required
-                                type="text"
-                                name="full-name"
-                                id="contact-full-name"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Full Name"
-                            />
-                        </div>
-                        <!-- Number -->
-                        <div>
-                            <label for="contact-phone-number" class="sr-only">Phone Number</label>
-                            <input
-                                type="tel"
-                                name="phone-number"
-                                id="contact-phone-number"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Phone Number"
-                            />
-                        </div>
-                        <!-- Email -->
-                        <div>
-                            <label for="contact-email" class="sr-only">Email</label>
-                            <input
-                                required
-                                type="email"
-                                name="email"
-                                id="contact-email"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Email"
-                            />
-                        </div>
-                        <!-- Address -->
-                        <div>
-                            <label for="contact-address" class="sr-only">Address</label>
-                            <input
-                                type="text"
-                                name="address"
-                                id="contact-address"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Address"
-                            />
-                        </div>
-                        <!-- Preferred date of service
-                        <div>
-                            <label for="contact-date" class="sr-only">Preferred Date of Service</label>
-                            <input
-                                type="date"
-                                name="date"
-                                id="contact-date"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Preferred Date of Service"
-                            />
-                        </div> -->
-                        <!-- Promo Code -->
-                        <!-- <div>
-                            <label for="contact-promo-code" class="sr-only">Promo Code</label>
-                            <input
-                                type="text"
-                                name="promo-code"
-                                id="contact-promo-code"
-                                class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Promo Code"
-                            />
-                        </div> -->
-                        <!-- How can we help you? (Concern) -->
-                        <div>
-                            <label for="contact-concern" class="sr-only">How can we help you?</label>
-                            <textarea
-                                required
-                                id="contact-concern"
-                                name="concern"
-                                rows="4"
-                                class="block py-2.5 w-full border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="How can we help you?"
-                            ></textarea>
-                        </div>
-                        <!-- <fieldset>
-                            <legend class="text-base font-medium text-gray-900">Services</legend>
-                            <div class="mt-2.5 grid gap-y-3.5 grid-cols-2">
-                                6
-                                
-                                    <div class="flex items-center">
-                                        <input
-                                            id="contact-service-142017"
-                                            name="142017"
-                                            type="checkbox"
-                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
-                                        />
-                                        <label for="contact-label-service-142017" class="ml-3 text-sm font-medium text-gray-700">House Wash</label>
-                                    </div>
-                                
-                                    <div class="flex items-center">
-                                        <input
-                                            id="contact-service-142018"
-                                            name="142018"
-                                            type="checkbox"
-                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
-                                        />
-                                        <label for="contact-label-service-142018" class="ml-3 text-sm font-medium text-gray-700">Gutter Cleaning and Guard Installation</label>
-                                    </div>
-                                
-                                    <div class="flex items-center">
-                                        <input
-                                            id="contact-service-142019"
-                                            name="142019"
-                                            type="checkbox"
-                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
-                                        />
-                                        <label for="contact-label-service-142019" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
-                                    </div>
-                                
-                                    <div class="flex items-center">
-                                        <input
-                                            id="contact-service-142020"
-                                            name="142020"
-                                            type="checkbox"
-                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
-                                        />
-                                        <label for="contact-label-service-142020" class="ml-3 text-sm font-medium text-gray-700">Decks & Patios</label>
-                                    </div>
-                                
-                                    <div class="flex items-center">
-                                        <input
-                                            id="contact-service-142021"
-                                            name="142021"
-                                            type="checkbox"
-                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
-                                        />
-                                        <label for="contact-label-service-142021" class="ml-3 text-sm font-medium text-gray-700">Pressure Washing Hardscapes</label>
-                                    </div>
-                                
-                                    <div class="flex items-center">
-                                        <input
-                                            id="contact-service-142022"
-                                            name="142022"
-                                            type="checkbox"
-                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
-                                        />
-                                        <label for="contact-label-service-142022" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
-                                    </div>
-                                
+
+                <form class="overflow-y-scroll pb-20 sm:w-full">
+                    <div class="flex-grow h-full overflow-x-hidden overflow-y-auto">
+                        <div class="h-full px-6 pb-1 mt-6 space-y-6 sm:grid sm:grid-cols-2 sm:min-w-max sm:space-x-3">
+                            <!-- Full Name -->
+                            
+                            <div class="sm:ml-3 sm:transform sm:translate-y-6">
+                                <label for="contact-full-name" class="sr-only">Full Name</label>
+                                <input
+                                        required
+                                        type="text"
+                                        name="full-name"
+                                        id="contact-full-name"
+                                        class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                        placeholder="Full Name"
+                                />
                             </div>
-                        </fieldset> -->
-                        <!-- Photo Upload -->
-                        <!-- <div
-                            x-data="{
-                            imageUrl: '',
-                            fileTooLarge: false,
-                            fileChosen(event) {
-                                if (this.isProperlySized(event)) {
-                                    this.fileToDataUrl(event, (src) => (this.imageUrl = src));
-                                    this.fileTooLarge = false;
-                                }
-                                else
-                                    this.fileTooLarge = true;
-                            },
-                            fileToDataUrl(event, callback) {
-                                if (!event.target.files.length) return;
-                                let file = event.target.files[0],
-                                    reader = new FileReader();
-                                reader.readAsDataURL(file);
-                                reader.onload = (e) => callback(e.target.result);
-                            },
-                            isProperlySized(event) {
-                                const files = event.currentTarget.files;
-                                for (const file in files) {
-                                    const filesize = ((files[file].size/1024)/1024).toFixed(4);
-                                    if (filesize > 2)
-                                        return false;
-                                }
-                                return true;
-                            },
-                        }"
-                        >
-                            <label class="block text-sm font-medium text-gray-700">Share a photo</label>
-                            <div x-show="imageUrl !== ''" x-collapse>
-                                <div class="flex flex-col items-center space-y-2 sm:space-y-0 sm:flex-row sm:space-x-5">
-                                    <img :src="imageUrl" class="object-cover rounded-md w-[200px] h-[140px]" />
-                                    <button
-                                        @click="imageUrl = ''; $refs.fileInput.value = '';"
-                                        type="button"
-                                        class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                                    >
-                                        Change
-                                    </button>
-                                </div>
+                            
+                            <!-- Number -->
+                            
+                            <div>
+                                <label for="contact-phone-number" class="sr-only">Phone Number</label>
+                                <input
+                                        type="tel"
+                                        name="phone-number"
+                                        id="contact-phone-number"
+                                        class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                        placeholder="Phone Number"
+                                />
                             </div>
-                            <div x-show="imageUrl === ''" x-collapse>
-                                <div
-                                    x-on:dragenter.prevent.stop
-                                    x-on:dragleave.prevent.stop
-                                    class="flex justify-center px-6 pt-5 pb-6 mt-1 border-2 border-dashed rounded-md"
-                                >
-                                    <div class="space-y-1 text-center">
-                                        <svg class="w-12 h-12 mx-auto text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
-                                            <path
-                                                d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
+                            
+                            <!-- Email -->
+                            
+                            <div>
+                                <label for="contact-email" class="sr-only">EmailTrue</label>
+                                <input
+                                        required
+                                        type="email"
+                                        name="email"
+                                        id="contact-email"
+                                        class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                        placeholder="Email"
+                                />
+                            </div>
+                            
+
+                            <!-- Address -->
+                            
+                            <div>
+                                <label for="contact-address" class="sr-only">Address</label>
+                                <input
+                                        type="text"
+                                        name="address"
+                                        id="contact-address"
+                                        class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                        placeholder="Address"
+                                />
+                            </div>
+                            
+                            <!-- Preferred date of service-->
+                            
+                            <div>
+                                <label for="contact-date" class="sr-only">Preferred Date of Service</label>
+                                <input
+                                        type="date"
+                                        name="date"
+                                        id="contact-date"
+                                        class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                        placeholder="Preferred Date of Service"
+                                />
+                            </div>
+                            
+                            <!--                        Promo Code-->
+                            
+                            <div class='sm:col-span-2'>
+                                
+                                <fieldset class="hidden sm:block sm:mb-3">
+                                    <legend class="text-base font-medium text-gray-900">Services</legend>
+                                    <div class="my-2.5 grid gap-y-3.5 grid-cols-2 ">
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171135"
+                                                    name="171135"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="House Wash"
                                             />
-                                        </svg>
-                                        <div class="flex justify-center text-sm text-gray-600">
-                                            <label
-                                                for="file-upload"
-                                                class="relative font-medium bg-white rounded-md cursor-pointer  text-secondary hover:text-secondary-darker focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary"
-                                            >
-                                                <span>Upload a file</span>
-                                                <input
-                                                    x-ref="fileInput"
-                                                    id="file-upload"
-                                                    name="file-upload"
-                                                    type="file"
-                                                    accept="image/*"
-                                                    class="sr-only"
-                                                    @change="fileChosen"
-                                                />
-                                            </label>
+                                            <label for="contact-label-service-171135" class="ml-3 text-sm font-medium text-gray-700">House Wash</label>
                                         </div>
-                                        <p class="text-xs text-gray-500">PNG, JPG, GIF up to 2MB</p>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171136"
+                                                    name="171136"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Gutter Cleaning and Guard Installation"
+                                            />
+                                            <label for="contact-label-service-171136" class="ml-3 text-sm font-medium text-gray-700">Gutter Cleaning and Guard Installation</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171137"
+                                                    name="171137"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Driveway & Sidewalk Cleaning"
+                                            />
+                                            <label for="contact-label-service-171137" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171138"
+                                                    name="171138"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Decks & Patios"
+                                            />
+                                            <label for="contact-label-service-171138" class="ml-3 text-sm font-medium text-gray-700">Decks & Patios</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171139"
+                                                    name="171139"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Pressure Washing Hardscapes"
+                                            />
+                                            <label for="contact-label-service-171139" class="ml-3 text-sm font-medium text-gray-700">Pressure Washing Hardscapes</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171140"
+                                                    name="171140"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Fence Washing"
+                                            />
+                                            <label for="contact-label-service-171140" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
+                                        </div>
+                                        
                                     </div>
+                                </fieldset>
+                                
+                                <div>
+                                <!-- How can we help you? (Concern) -->
+                                
+                                <div class='sm:flex sm:flex-1 sm:mt-3 sm:space-x-3'>
+                                <div class='sm:flex-grow'>
+                                    <label for="contact-concern" class="sr-only">How can we help you?</label>
+                                    <textarea
+                                            required
+                                            id="contact-concern"
+                                            name="concern"
+                                            rows="4"
+                                            class="block py-3.5 px-2.5 w-full border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                                            placeholder="How can we help you?"
+                                    ></textarea>
                                 </div>
+                                
+                                <!-- Services -->
+                                
+                                
+                                <fieldset class="sm:hidden my-3 sm:mb-0">
+                                    <legend class="text-base font-medium text-gray-900">Services</legend>
+                                    <div class="mt-2.5 grid gap-y-3.5 grid-cols-2 sm:flex sm:space-x-6">
+
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171135"
+                                                    name="171135"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="House Wash"
+                                            />
+                                            <label for="contact-label-service-171135" class="ml-3 text-sm font-medium text-gray-700">House Wash</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171136"
+                                                    name="171136"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Gutter Cleaning and Guard Installation"
+                                            />
+                                            <label for="contact-label-service-171136" class="ml-3 text-sm font-medium text-gray-700">Gutter Cleaning and Guard Installation</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171137"
+                                                    name="171137"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Driveway & Sidewalk Cleaning"
+                                            />
+                                            <label for="contact-label-service-171137" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171138"
+                                                    name="171138"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Decks & Patios"
+                                            />
+                                            <label for="contact-label-service-171138" class="ml-3 text-sm font-medium text-gray-700">Decks & Patios</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171139"
+                                                    name="171139"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Pressure Washing Hardscapes"
+                                            />
+                                            <label for="contact-label-service-171139" class="ml-3 text-sm font-medium text-gray-700">Pressure Washing Hardscapes</label>
+                                        </div>
+                                        
+                                        <div class="flex items-center">
+                                            <input
+                                                    id="contact-service-171140"
+                                                    name="171140"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Fence Washing"
+                                            />
+                                            <label for="contact-label-service-171140" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
+                                        </div>
+                                        
+                                    </div>
+                                </fieldset>
+                                
+                                <!-- Photo Upload -->
+                                
                             </div>
-                            <p x-show="fileTooLarge" class="mt-2 text-sm text-red-600">
-                                The selected file is too large. Please reduce the size or choose another file.
-                            </p>
-                        </div> -->
-                        <div
-                        onclick= "send_sms('Power-Wash-Masters')" 
-                            class="
-                                inline-flex
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <div class="flex
                                 items-center
                                 justify-center
                                 w-full
-                                px-5
+                            "
+                     onclick="send_sms('Power-Wash-Masters')"
+                >
+                    <button class="
                                 py-2.5
+                                w-4/5
+                                fixed
+                                bottom
                                 text-sm
                                 font-medium
                                 transition
@@ -1640,19 +2492,23 @@
                                 hover:bg-primary-darker
                                 bg-primar
                                 focus-visible:ring-2
-                                ring-primary ring-opacity-75 ring-offset-2
-                            "
-                        >
-                            Send
-                    </div>
-                    </div>
-                </form>
+                                ring-primary ring-opacity-75 ring-offset-2" 
+                                style="
+                                position:absolute;
+                                left: 50%;
+                                bottom: 0;
+                                transform: translate(-50%, -50%);
+                                margin-top: 0;
+                                margin-bottom: 0"> Send
+                    </button>
+                </div>
+
+
             </div>
         </div>
     </div>
 </template>
-
-                <!-- Modal -->
+<!-- Modal -->
 <template x-teleport="body">
     <div x-show="reviewModalOpen" @keydown.escape.prevent.stop="reviewModalOpen = false" role="dialog" aria-modal="true" x-id="['modal-title']" :aria-labelledby="$id('modal-title')" class="fixed inset-0 z-40 pt-8 pb-20" x-trap.noscroll.inert="reviewModalOpen">
         <!-- Overlay -->
@@ -1689,19 +2545,19 @@
                     <!-- Google Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="//www.google.com/search?ei=bp6iwta5hmf8zgkqq62ocw&amp;q=power+wash+masters+marshville+nc&amp;oq=power+wash+masters+marshville+nc&amp;gs_l=psy-ab.3..0i71k1l2.3781.3781.0.4160.0.0.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..0.0.0....0.0ixq6erpmsw#lrd=0x885446d5535a5885:0x1c3d7190978ecea8,3,,," class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https:// https://goo.gl/maps/L1mMsVqqzPXD8H5H8" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                     <!-- Facebook Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="//www.google.com/search?ei=bp6iwta5hmf8zgkqq62ocw&amp;q=power+wash+masters+marshville+nc&amp;oq=power+wash+masters+marshville+nc&amp;gs_l=psy-ab.3..0i71k1l2.3781.3781.0.4160.0.0.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..0.0.0....0.0ixq6erpmsw#lrd=0x885446d5535a5885:0x1c3d7190978ecea8,1,,," class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">See More Reviews</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?ei=bp6iwta5hmf8zgkqq62ocw&amp;q=power+wash+masters+marshville+nc&amp;oq=power+wash+masters+marshville+nc&amp;gs_l=psy-ab.3..0i71k1l2.3781.3781.0.4160.0.0.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..0.0.0....0.0ixq6erpmsw#lrd=0x885446d5535a5885:0x1c3d7190978ecea8,1,,," class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">See More Reviews</a>
                     </li>
                     
                     <!-- Yelp Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="//https://www.facebook.com/Powerwash4u/?ref=page_internal/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Powerwash4u/?ref=page_internal/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                 </ul>
@@ -1709,28 +2565,28 @@
         </div>
     </div>
 </template>
- 
-    
 
-        <!-- <div x-data="{ open: false }">
-            <button @click="open = true">Open Dialogue</button>
 
-            <span x-show="open" x-trap.inert.noscroll="open">
+
+<!-- <div x-data="{ open: false }">
+    <button @click="open = true">Open Dialogue</button>
+
+    <span x-show="open" x-trap.inert.noscroll="open">
+        ...
+
+        <div x-data="{ open: false }">
+            <button @click="open = true">Open Nested Dialogue</button>
+
+            <span x-show="open" x-trap="open">
                 ...
 
-                <div x-data="{ open: false }">
-                    <button @click="open = true">Open Nested Dialogue</button>
-
-                    <span x-show="open" x-trap="open">
-                        ...
-
-                        <button @click="open = false">Close Nested Dialogue</button>
-                    </span>
-                </div>
-
-                <button @click="open = false">Close Dialogue</button>
+                <button @click="open = false">Close Nested Dialogue</button>
             </span>
         </div>
-        <p>Nostrud eu amet nostrud id ut cillum sint minim anim Lorem nulla nisi cillum commodo. Dolor exercitation incididunt et velit qui ea nisi. Do consectetur in ex adipisicing. Irure id aute non nulla eiusmod incididunt deserunt labore amet. Consequat proident nisi amet est consequat sunt eiusmod aute ut exercitation amet. Eu eu Lorem minim duis culpa sit qui nostrud irure aliquip irure occaecat. Duis eu duis id veniam.</p> -->
-    </body>
+
+        <button @click="open = false">Close Dialogue</button>
+    </span>
+</div>
+<p>Nostrud eu amet nostrud id ut cillum sint minim anim Lorem nulla nisi cillum commodo. Dolor exercitation incididunt et velit qui ea nisi. Do consectetur in ex adipisicing. Irure id aute non nulla eiusmod incididunt deserunt labore amet. Consequat proident nisi amet est consequat sunt eiusmod aute ut exercitation amet. Eu eu Lorem minim duis culpa sit qui nostrud irure aliquip irure occaecat. Duis eu duis id veniam.</p> -->
+</body>
 </html>
